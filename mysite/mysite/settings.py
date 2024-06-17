@@ -79,6 +79,7 @@ DB_NAME = os.environ['DB_NAME']
 USER = os.environ['USER']
 PASSWORD = os.environ['PASSWORD']
 
+
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -90,7 +91,7 @@ DATABASES = {
         'USER': USER,
         'PASSWORD': PASSWORD,
         'HOST': '127.0.0.1',
-        'PORT': '5432'
+        'PORT': '5432',
     }
 }
 

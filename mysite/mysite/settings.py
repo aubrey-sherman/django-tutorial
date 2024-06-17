@@ -1,5 +1,8 @@
+from pathlib import Path
 import os
 from dotenv import load_dotenv
+
+load_dotenv()
 
 """
 Django settings for mysite project.
@@ -13,7 +16,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
-from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -73,7 +75,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-NAME = os.environ['NAME']
+DB_NAME = os.environ['DB_NAME']
 USER = os.environ['USER']
 PASSWORD = os.environ['PASSWORD']
 
@@ -84,7 +86,7 @@ DATABASES = {
     'default': {
         'ENGINE':
         'django.db.backends.postgresql',
-        'NAME': NAME,
+        'NAME': DB_NAME,
         'USER': USER,
         'PASSWORD': PASSWORD,
         'HOST': '127.0.0.1',

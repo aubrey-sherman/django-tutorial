@@ -78,6 +78,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DB_NAME = os.environ['DB_NAME']
 USER = os.environ['USER']
 PASSWORD = os.environ['PASSWORD']
+TIMEZONE = os.environ['TIMEZONE']
 
 
 # Database
@@ -120,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = TIMEZONE
 
 USE_I18N = True
 

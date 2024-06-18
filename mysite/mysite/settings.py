@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DB_NAME = os.environ['DB_NAME']
 USER = os.environ['USER']
 PASSWORD = os.environ['PASSWORD']
-TIMEZONE = os.environ['TIMEZONE']
+TIMEZONE = "America/Los_Angeles"
 
 
 # Database
